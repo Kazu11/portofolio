@@ -138,12 +138,6 @@
                 <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
                     <!-- Left Side: Content -->
                     <div class="lg:col-span-7 text-center lg:text-left space-y-6">
-                        <!-- Profile Photo -->
-                        <div class="flex justify-center lg:justify-start mb-2">
-                            <div class="relative w-32 h-32 sm:w-36 sm:h-36 rounded-full overflow-hidden border-4 border-white dark:border-slate-800 shadow-xl bg-slate-100 dark:bg-slate-800">
-                                <img src="assets/FotoDiri/foto-profil.png" alt="Abdullah Faqih" class="w-full h-full object-cover">
-                            </div>
-                        </div>
                         <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary-100 dark:bg-primary-900/30 text-primary-600 dark:text-primary-400 text-sm font-semibold">
                             <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
                             <span class="lang-id">Terbuka untuk Peluang Karir Baru & Kolaborasi Profesional</span>
@@ -178,16 +172,17 @@
                     <div class="lg:col-span-5 flex justify-center">
                         <div class="relative group">
                             <div class="absolute inset-0 bg-gradient-to-r from-primary-600 to-indigo-600 rounded-2xl blur-xl opacity-30 group-hover:opacity-40 transition-opacity"></div>
-                            <!-- CV Preview Card -->
-                            <div class="overflow-hidden rounded-xl border border-slate-200 dark:border-slate-700 mb-4 aspect-[3/4] relative group-hover:scale-[1.02] transition-transform duration-300 bg-slate-100 dark:bg-slate-900">
-                                <img src="assets/FotoDiri/foto-profil.png" alt="Abdullah Faqih" class="w-full h-full object-cover">
-                            </div>
-                         </div>
-                                <h3 class="text-lg font-bold">Abdullah Faqih</h3>
+                            <!-- Profile Photo Card -->
+                            <div class="relative bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-2xl p-4 shadow-2xl max-w-sm">
+                                <div class="overflow-hidden rounded-xl border border-slate-200 dark:border-slate-700 mb-4 aspect-[3/4] relative group-hover:scale-[1.02] transition-transform duration-300 bg-slate-100 dark:bg-slate-900">
+                                    <img src="assets/FotoDiri/foto-profil.png" alt="Abdullah Faqih" class="w-full h-full object-cover">
+                                </div>
+                                <div class="text-center">
+                                    <h3 class="text-lg font-bold">Abdullah Faqih</h3>
                                     <p class="text-xs text-slate-500 dark:text-slate-400 mb-2">
                                         <span class="lang-id">Lulusan Sistem Informasi & Spesialis Keamanan</span>
                                         <span class="lang-en hidden">Information Systems Graduate & Security Specialist</span>
-                                    </p>                               
+                                    </p>
                                     <div class="flex justify-center gap-4 text-slate-500 dark:text-slate-400 pt-2 border-t border-slate-100 dark:border-slate-700/50">
                                         <a href="https://www.linkedin.com/in/abdullahfaqih4/" target="_blank" class="hover:text-primary-600 transition-colors" title="LinkedIn"><i class="fab fa-linkedin text-lg"></i></a>
                                         <a href="https://github.com/Kazu11" target="_blank" class="hover:text-primary-600 transition-colors" title="GitHub"><i class="fab fa-github text-lg"></i></a>
@@ -1228,7 +1223,6 @@
              });
         };
         document.getElementById('view-cv-btn').addEventListener('click', triggerCV);
-        document.getElementById('cv-thumbnail-card').addEventListener('click', triggerCV);
     </script>
 </body>
 </html>
