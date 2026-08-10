@@ -173,23 +173,15 @@
                         <div class="relative group">
                             <div class="absolute inset-0 bg-gradient-to-r from-primary-600 to-indigo-600 rounded-2xl blur-xl opacity-30 group-hover:opacity-40 transition-opacity"></div>
                             <!-- CV Preview Card -->
-                            <div class="relative bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-2xl p-4 shadow-2xl max-w-sm cursor-pointer" id="cv-thumbnail-card">
-                                <div class="overflow-hidden rounded-xl border border-slate-200 dark:border-slate-700 mb-4 aspect-[3/4] relative group-hover:scale-[1.02] transition-transform duration-300 bg-slate-100 dark:bg-slate-900">
-                                    <img src="assets/main_cv.jpg" alt="Abdullah Faqih CV Preview" class="w-full h-full object-cover">
-                                    <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                                        <span class="px-4 py-2 bg-white/95 text-slate-900 rounded-lg font-bold text-sm shadow-md flex items-center gap-2">
-                                            <i class="fas fa-search-plus"></i>
-                                            <span class="lang-id">Perbesar CV</span>
-                                            <span class="lang-en hidden">Zoom CV</span>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="text-center">
-                                    <h3 class="text-lg font-bold">Curriculum Vitae</h3>
+                            <div class="overflow-hidden rounded-xl border border-slate-200 dark:border-slate-700 mb-4 aspect-[3/4] relative group-hover:scale-[1.02] transition-transform duration-300 bg-slate-100 dark:bg-slate-900">
+                                <img src="assets/FotoDiri/foto-profil.png" alt="Abdullah Faqih" class="w-full h-full object-cover">
+                            </div>
+                         </div>
+                                <h3 class="text-lg font-bold">Abdullah Faqih</h3>
                                     <p class="text-xs text-slate-500 dark:text-slate-400 mb-2">
-                                        <span class="lang-id">Klik untuk melihat CV lengkap saya</span>
-                                        <span class="lang-en hidden">Click to view my full CV</span>
-                                    </p>
+                                        <span class="lang-id">Lulusan Sistem Informasi & Spesialis Keamanan</span>
+                                        <span class="lang-en hidden">Information Systems Graduate & Security Specialist</span>
+                                    </p>                               
                                     <div class="flex justify-center gap-4 text-slate-500 dark:text-slate-400 pt-2 border-t border-slate-100 dark:border-slate-700/50">
                                         <a href="https://www.linkedin.com/in/abdullahfaqih4/" target="_blank" class="hover:text-primary-600 transition-colors" title="LinkedIn"><i class="fab fa-linkedin text-lg"></i></a>
                                         <a href="https://github.com/Kazu11" target="_blank" class="hover:text-primary-600 transition-colors" title="GitHub"><i class="fab fa-github text-lg"></i></a>
@@ -1220,14 +1212,14 @@
 
         // Attach event listeners for CV Preview triggers
         const triggerCV = () => {
-            openModal({
-                images: ["assets/main_cv.jpg"],
-                titleId: "Curriculum Vitae (CV) - Abdullah Faqih",
-                titleEn: "Curriculum Vitae (CV) - Abdullah Faqih",
-                tagId: "Dokumen Karir",
-                tagEn: "Career Document",
+             openModal({
+                images: ["assets/FotoDiri/foto-profil.png"],
+                titleId: "Abdullah Faqih",
+                titleEn: "Abdullah Faqih",
+                tagId: "Foto Abdullah Faqih",
+                tagEn: "Foto Profile",
                 isCV: true
-            });
+             });
         };
         document.getElementById('view-cv-btn').addEventListener('click', triggerCV);
         document.getElementById('cv-thumbnail-card').addEventListener('click', triggerCV);
