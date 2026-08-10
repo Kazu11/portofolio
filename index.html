@@ -51,15 +51,37 @@
                 </div>
                 <!-- Desktop Navigation Links -->
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="#beranda" class="text-sm font-semibold hover:text-primary-600 transition-colors">Beranda</a>
-                    <a href="#tentang" class="text-sm font-semibold hover:text-primary-600 transition-colors">Tentang Saya</a>
-                    <a href="#keahlian" class="text-sm font-semibold hover:text-primary-600 transition-colors">Keahlian</a>
-                    <a href="#pengalaman" class="text-sm font-semibold hover:text-primary-600 transition-colors">Pengalaman</a>
-                    <a href="#sertifikat" class="text-sm font-semibold hover:text-primary-600 transition-colors">Sertifikat</a>
-                    <a href="#kontak" class="text-sm font-semibold hover:text-primary-600 transition-colors">Kontak</a>
+                    <a href="#beranda" class="text-sm font-semibold hover:text-primary-600 transition-colors">
+                        <span class="lang-id">Beranda</span>
+                        <span class="lang-en hidden">Home</span>
+                    </a>
+                    <a href="#tentang" class="text-sm font-semibold hover:text-primary-600 transition-colors">
+                        <span class="lang-id">Tentang Saya</span>
+                        <span class="lang-en hidden">About Me</span>
+                    </a>
+                    <a href="#keahlian" class="text-sm font-semibold hover:text-primary-600 transition-colors">
+                        <span class="lang-id">Keahlian</span>
+                        <span class="lang-en hidden">Skills</span>
+                    </a>
+                    <a href="#pengalaman" class="text-sm font-semibold hover:text-primary-600 transition-colors">
+                        <span class="lang-id">Pengalaman</span>
+                        <span class="lang-en hidden">Experience</span>
+                    </a>
+                    <a href="#sertifikat" class="text-sm font-semibold hover:text-primary-600 transition-colors">
+                        <span class="lang-id">Sertifikat</span>
+                        <span class="lang-en hidden">Certificates</span>
+                    </a>
+                    <a href="#kontak" class="text-sm font-semibold hover:text-primary-600 transition-colors">
+                        <span class="lang-id">Kontak</span>
+                        <span class="lang-en hidden">Contact</span>
+                    </a>
                 </div>
                 <!-- Action Buttons & Mode Toggle -->
                 <div class="flex items-center space-x-4">
+                    <!-- Language Switcher Button -->
+                    <button id="lang-toggle" class="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 transition-all font-bold text-xs" aria-label="Toggle Language">
+                        <span id="lang-toggle-text">EN</span>
+                    </button>
                     <!-- Dark Mode Toggle Button -->
                     <button id="theme-toggle" class="p-2 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors" aria-label="Toggle Dark Mode">
                         <i id="theme-toggle-dark-icon" class="hidden fas fa-moon text-lg"></i>
@@ -76,12 +98,30 @@
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800">
             <div class="px-2 pt-2 pb-4 space-y-1">
-                <a href="#beranda" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium hover:bg-slate-100 dark:hover:bg-slate-800">Beranda</a>
-                <a href="#tentang" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium hover:bg-slate-100 dark:hover:bg-slate-800">Tentang Saya</a>
-                <a href="#keahlian" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium hover:bg-slate-100 dark:hover:bg-slate-800">Keahlian</a>
-                <a href="#pengalaman" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium hover:bg-slate-100 dark:hover:bg-slate-800">Pengalaman</a>
-                <a href="#sertifikat" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium hover:bg-slate-100 dark:hover:bg-slate-800">Sertifikat</a>
-                <a href="#kontak" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium hover:bg-slate-100 dark:hover:bg-slate-800">Kontak</a>
+                <a href="#beranda" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium hover:bg-slate-100 dark:hover:bg-slate-800">
+                    <span class="lang-id">Beranda</span>
+                    <span class="lang-en hidden">Home</span>
+                </a>
+                <a href="#tentang" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium hover:bg-slate-100 dark:hover:bg-slate-800">
+                    <span class="lang-id">Tentang Saya</span>
+                    <span class="lang-en hidden">About Me</span>
+                </a>
+                <a href="#keahlian" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium hover:bg-slate-100 dark:hover:bg-slate-800">
+                    <span class="lang-id">Keahlian</span>
+                    <span class="lang-en hidden">Skills</span>
+                </a>
+                <a href="#pengalaman" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium hover:bg-slate-100 dark:hover:bg-slate-800">
+                    <span class="lang-id">Pengalaman</span>
+                    <span class="lang-en hidden">Experience</span>
+                </a>
+                <a href="#sertifikat" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium hover:bg-slate-100 dark:hover:bg-slate-800">
+                    <span class="lang-id">Sertifikat</span>
+                    <span class="lang-en hidden">Certificates</span>
+                </a>
+                <a href="#kontak" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium hover:bg-slate-100 dark:hover:bg-slate-800">
+                    <span class="lang-id">Kontak</span>
+                    <span class="lang-en hidden">Contact</span>
+                </a>
             </div>
         </div>
     </nav>
@@ -100,23 +140,31 @@
                     <div class="lg:col-span-7 text-center lg:text-left space-y-6">
                         <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary-100 dark:bg-primary-900/30 text-primary-600 dark:text-primary-400 text-sm font-semibold">
                             <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
-                            Terbuka untuk Peluang Karir Baru & Kolaborasi Profesional
+                            <span class="lang-id">Terbuka untuk Peluang Karir Baru & Kolaborasi Profesional</span>
+                            <span class="lang-en hidden">Open for New Career Opportunities & Professional Collaboration</span>
                         </div>
                         <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight">
-                            Halo, Saya <span class="bg-gradient-to-r from-primary-600 to-indigo-600 bg-clip-text text-transparent">Abdullah Faqih</span>
+                            <span class="lang-id">Halo, Saya <span class="bg-gradient-to-r from-primary-600 to-indigo-600 bg-clip-text text-transparent">Abdullah Faqih</span></span>
+                            <span class="lang-en hidden">Hello, I'm <span class="bg-gradient-to-r from-primary-600 to-indigo-600 bg-clip-text text-transparent">Abdullah Faqih</span></span>
                         </h1>
                         <p class="text-xl font-bold text-slate-600 dark:text-slate-300">
-                            Lulusan Sistem Informasi | Spesialis Keamanan Siber, Keamanan Fisik & Desainer Grafis
+                            <span class="lang-id">Lulusan Sistem Informasi | Spesialis Keamanan Siber, Keamanan Fisik & Desainer Grafis</span>
+                            <span class="lang-en hidden">Information Systems Graduate | Cybersecurity Specialist, Physical Security & Graphic Designer</span>
                         </p>
-                        <p class="text-base sm:text-lg text-slate-500 dark:text-slate-400 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-                            Saya menggabungkan keahlian teknis dalam analisis ancaman data dengan kepemimpinan taktis di bidang keamanan fisik. Memiliki rekam jejak sukses dalam mengelola risiko operasional, merancang identitas brand visual, dan memimpin kampanye e-commerce berkinerja tinggi.
+                        <p class="text-base sm:text-lg text-slate-500 dark:text-slate-400 max-w-2xl mx-auto lg:mx-0 leading-relaxed text-justify">
+                            <span class="lang-id">Saya menggabungkan keahlian teknis dalam analisis ancaman data dengan kepemimpinan taktis di bidang keamanan fisik. Memiliki rekam jejak sukses dalam mengelola risiko operasional, merancang identitas brand visual, dan memimpin kampanye e-commerce berkinerja tinggi.</span>
+                            <span class="lang-en hidden">I combine technical expertise in data threat mitigation with tactical leadership in physical security. Possessing a proven track record of managing operational risks, designing visual brand identities, and leading high-performing e-commerce marketing campaigns.</span>
                         </p>
                         <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                             <button id="view-cv-btn" class="px-8 py-3.5 bg-primary-600 text-white rounded-xl font-semibold shadow-lg shadow-primary-500/25 hover:bg-primary-700 hover:shadow-primary-600/35 transition-all flex items-center justify-center gap-2">
-                                <i class="fas fa-file-pdf"></i> Lihat Curriculum Vitae (CV)
+                                <i class="fas fa-file-pdf"></i>
+                                <span class="lang-id">Lihat Curriculum Vitae (CV)</span>
+                                <span class="lang-en hidden">View Curriculum Vitae (CV)</span>
                             </button>
                             <a href="#sertifikat" class="px-8 py-3.5 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700 rounded-xl font-semibold hover:bg-slate-200 dark:hover:bg-slate-700 transition-all flex items-center justify-center gap-2">
-                                <i class="fas fa-award"></i> Lihat Sertifikasi
+                                <i class="fas fa-award"></i>
+                                <span class="lang-id">Lihat Sertifikasi</span>
+                                <span class="lang-en hidden">View Certifications</span>
                             </a>
                         </div>
                     </div>
@@ -130,13 +178,18 @@
                                     <img src="assets/main_cv.jpg" alt="Abdullah Faqih CV Preview" class="w-full h-full object-cover">
                                     <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                                         <span class="px-4 py-2 bg-white/95 text-slate-900 rounded-lg font-bold text-sm shadow-md flex items-center gap-2">
-                                            <i class="fas fa-search-plus"></i> Perbesar CV
+                                            <i class="fas fa-search-plus"></i>
+                                            <span class="lang-id">Perbesar CV</span>
+                                            <span class="lang-en hidden">Zoom CV</span>
                                         </span>
                                     </div>
                                 </div>
                                 <div class="text-center">
                                     <h3 class="text-lg font-bold">Curriculum Vitae</h3>
-                                    <p class="text-xs text-slate-500 dark:text-slate-400 mb-2">Klik untuk melihat CV lengkap saya</p>
+                                    <p class="text-xs text-slate-500 dark:text-slate-400 mb-2">
+                                        <span class="lang-id">Klik untuk melihat CV lengkap saya</span>
+                                        <span class="lang-en hidden">Click to view my full CV</span>
+                                    </p>
                                     <div class="flex justify-center gap-4 text-slate-500 dark:text-slate-400 pt-2 border-t border-slate-100 dark:border-slate-700/50">
                                         <a href="https://www.linkedin.com/in/abdullahfaqih4/" target="_blank" class="hover:text-primary-600 transition-colors" title="LinkedIn"><i class="fab fa-linkedin text-lg"></i></a>
                                         <a href="https://github.com/Kazu11" target="_blank" class="hover:text-primary-600 transition-colors" title="GitHub"><i class="fab fa-github text-lg"></i></a>
@@ -157,7 +210,8 @@
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center max-w-3xl mx-auto mb-16">
                     <h2 class="text-3xl font-extrabold sm:text-4xl bg-gradient-to-r from-primary-600 to-indigo-600 bg-clip-text text-transparent">
-                        Tentang Saya
+                        <span class="lang-id">Tentang Saya</span>
+                        <span class="lang-en hidden">About Me</span>
                     </h2>
                     <div class="w-16 h-1 bg-primary-600 mx-auto mt-4 rounded-full"></div>
                 </div>
@@ -165,36 +219,52 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                     <div class="space-y-6">
                         <h3 class="text-2xl font-bold text-slate-800 dark:text-slate-100">
-                            Sinergi Antara Sistem Keamanan & Desain Visual
+                            <span class="lang-id">Sinergi Antara Sistem Keamanan & Desain Visual</span>
+                            <span class="lang-en hidden">Synergy Between Security Systems & Visual Design</span>
                         </h3>
                         <p class="text-slate-600 dark:text-slate-300 leading-relaxed text-justify">
-                            Saya adalah lulusan Sistem Informasi dengan spesialisasi khusus di bidang Keamanan Siber. Melalui perjalanan profesional saya, saya berhasil memadukan keahlian teknis mitigasi risiko digital dengan sertifikasi resmi fisik sebagai Petugas Keamanan Gada Pratama dari Kepolisian Negara Republik Indonesia.
+                            <span class="lang-id">Saya adalah lulusan Sistem Informasi dengan spesialisasi khusus di bidang Keamanan Siber. Melalui perjalanan profesional saya, saya berhasil memadukan keahlian teknis mitigasi risiko digital dengan sertifikasi resmi fisik sebagai Petugas Keamanan Gada Pratama dari Kepolisian Negara Republik Indonesia.</span>
+                            <span class="lang-en hidden">I am an Information Systems graduate specializing in Cybersecurity. Throughout my professional journey, I have successfully merged digital risk mitigation technical expertise with official physical security credentials as a Gada Pratama Security Officer from the National Police of the Republic of Indonesia (POLRI).</span>
                         </p>
                         <p class="text-slate-600 dark:text-slate-300 leading-relaxed text-justify">
-                            Selain mengamankan infrastruktur fisik dan digital, saya juga aktif di industri kreatif sebagai Motion Graphic Designer dan Desainer Visual. Saya berpengaruh dalam menata branding identitas visual untuk lebih dari 15 toko online e-commerce serta memproduksi konten video berkualitas tinggi bersama tim OnePassionSquad.
+                            <span class="lang-id">Selain mengamankan infrastruktur fisik dan digital, saya juga aktif di industri kreatif sebagai Motion Graphic Designer dan Desainer Visual. Saya berpengaruh dalam menata branding identitas visual untuk lebih dari 15 toko online e-commerce serta memproduksi konten video berkualitas tinggi bersama tim OnePassionSquad.</span>
+                            <span class="lang-en hidden">Besides securing physical and digital infrastructures, I am also active in the creative industry as a Motion Graphic Designer and Visual Designer. I play an influential role in crafting brand visual identities for over 15 e-commerce stores and producing high-quality media content with the OnePassionSquad team.</span>
                         </p>
                         <div class="p-4 bg-primary-50 dark:bg-slate-800 rounded-xl border-l-4 border-primary-600">
                             <p class="text-sm italic text-slate-700 dark:text-slate-300">
-                                "Menggunakan pemecahan masalah yang kuat, pemahaman keamanan holistik, serta strategi inovatif untuk memberikan dampak nyata pada lingkungan bisnis yang cepat berubah."
+                                <span class="lang-id">"Menggunakan pemecahan masalah yang kuat, pemahaman keamanan holistik, serta strategi inovatif untuk memberikan dampak nyata pada lingkungan bisnis yang cepat berubah."</span>
+                                <span class="lang-en hidden">"Utilizing strong problem-solving skills, holistic security understandings, and innovative strategies to deliver measurable impacts on rapidly evolving business environments."</span>
                             </p>
                         </div>
                     </div>
                     <div class="grid grid-cols-2 gap-6">
                         <div class="p-6 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl text-center">
                             <span class="block text-4xl font-extrabold text-primary-600 mb-2">15+</span>
-                            <span class="text-xs font-semibold text-slate-500 dark:text-slate-400">Online Storefronts Managed</span>
+                            <span class="text-xs font-semibold text-slate-500 dark:text-slate-400">
+                                <span class="lang-id">Toko Online Dikelola</span>
+                                <span class="lang-en hidden">Online Storefronts Managed</span>
+                            </span>
                         </div>
                         <div class="p-6 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl text-center">
                             <span class="block text-4xl font-extrabold text-primary-600 mb-2">6+</span>
-                            <span class="text-xs font-semibold text-slate-500 dark:text-slate-400">Sertifikasi Profesional Utama</span>
+                            <span class="text-xs font-semibold text-slate-500 dark:text-slate-400">
+                                <span class="lang-id">Sertifikasi Profesional Utama</span>
+                                <span class="lang-en hidden">Major Professional Credentials</span>
+                            </span>
                         </div>
                         <div class="p-6 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl text-center">
                             <span class="block text-4xl font-extrabold text-primary-600 mb-2">100%</span>
-                            <span class="text-xs font-semibold text-slate-500 dark:text-slate-400">Komitmen Kepatuhan & Keamanan</span>
+                            <span class="text-xs font-semibold text-slate-500 dark:text-slate-400">
+                                <span class="lang-id">Komitmen Kepatuhan & Keamanan</span>
+                                <span class="lang-en hidden">Safety & Compliance Commitment</span>
+                            </span>
                         </div>
                         <div class="p-6 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl text-center">
                             <span class="block text-4xl font-extrabold text-primary-600 mb-2">1</span>
-                            <span class="text-xs font-semibold text-slate-500 dark:text-slate-400">Profil Unik Multidisiplin</span>
+                            <span class="text-xs font-semibold text-slate-500 dark:text-slate-400">
+                                <span class="lang-id">Profil Unik Multidisiplin</span>
+                                <span class="lang-en hidden">Unique Multidisciplinary Profile</span>
+                            </span>
                         </div>
                     </div>
                 </div>
@@ -206,7 +276,8 @@
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center max-w-3xl mx-auto mb-16">
                     <h2 class="text-3xl font-extrabold sm:text-4xl bg-gradient-to-r from-primary-600 to-indigo-600 bg-clip-text text-transparent">
-                        Keahlian & Kompetensi
+                        <span class="lang-id">Keahlian & Kompetensi</span>
+                        <span class="lang-en hidden">Skills & Competences</span>
                     </h2>
                     <div class="w-16 h-1 bg-primary-600 mx-auto mt-4 rounded-full"></div>
                 </div>
@@ -217,7 +288,10 @@
                         <div class="w-12 h-12 rounded-xl bg-primary-100 dark:bg-primary-900/30 flex items-center justify-center text-primary-600 dark:text-primary-400 mb-6">
                             <i class="fas fa-shield-halved text-2xl"></i>
                         </div>
-                        <h3 class="text-xl font-bold mb-4">Security & Threat Management</h3>
+                        <h3 class="text-xl font-bold mb-4">
+                            <span class="lang-id">Manajemen Keamanan & Ancaman</span>
+                            <span class="lang-en hidden">Security & Threat Management</span>
+                        </h3>
                         <div class="space-y-4">
                             <div>
                                 <div class="flex justify-between text-sm font-semibold mb-1">
@@ -254,7 +328,10 @@
                         <div class="w-12 h-12 rounded-xl bg-indigo-100 dark:bg-indigo-900/30 flex items-center justify-center text-indigo-600 dark:text-indigo-400 mb-6">
                             <i class="fas fa-palette text-2xl"></i>
                         </div>
-                        <h3 class="text-xl font-bold mb-4">Creative Design & Media</h3>
+                        <h3 class="text-xl font-bold mb-4">
+                            <span class="lang-id">Desain Kreatif & Media</span>
+                            <span class="lang-en hidden">Creative Design & Media</span>
+                        </h3>
                         <div class="space-y-4">
                             <div>
                                 <div class="flex justify-between text-sm font-semibold mb-1">
@@ -291,7 +368,10 @@
                         <div class="w-12 h-12 rounded-xl bg-emerald-100 dark:bg-emerald-900/30 flex items-center justify-center text-emerald-600 dark:text-emerald-400 mb-6">
                             <i class="fas fa-chart-line text-2xl"></i>
                         </div>
-                        <h3 class="text-xl font-bold mb-4">Operations & Digital Systems</h3>
+                        <h3 class="text-xl font-bold mb-4">
+                            <span class="lang-id">Operasional & Sistem Digital</span>
+                            <span class="lang-en hidden">Operations & Digital Systems</span>
+                        </h3>
                         <div class="space-y-4">
                             <div>
                                 <div class="flex justify-between text-sm font-semibold mb-1">
@@ -331,7 +411,8 @@
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center max-w-3xl mx-auto mb-16">
                     <h2 class="text-3xl font-extrabold sm:text-4xl bg-gradient-to-r from-primary-600 to-indigo-600 bg-clip-text text-transparent">
-                        Pengalaman Karir
+                        <span class="lang-id">Pengalaman Karir</span>
+                        <span class="lang-en hidden">Career Experience</span>
                     </h2>
                     <div class="w-16 h-1 bg-primary-600 mx-auto mt-4 rounded-full"></div>
                 </div>
@@ -343,10 +424,24 @@
                             <i class="fas fa-shield-halved text-xs"></i>
                         </span>
                         <div class="bg-white dark:bg-slate-800 p-6 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm">
-                            <span class="text-xs font-bold text-primary-600 uppercase tracking-widest block mb-2">JULY 2022 - NOW</span>
-                            <h3 class="text-lg font-bold">Security Officer</h3>
+                            <span class="text-xs font-bold text-primary-600 uppercase tracking-widest block mb-2">
+                                <span class="lang-id">JULI 2022 - SEKARANG</span>
+                                <span class="lang-en hidden">JULY 2022 - NOW</span>
+                            </span>
+                            <h3 class="text-lg font-bold">
+                                <span class="lang-id">Petugas Keamanan (Security Officer)</span>
+                                <span class="lang-en hidden">Security Officer</span>
+                            </h3>
                             <p class="text-sm text-slate-500 dark:text-slate-400 mb-4 font-semibold">PT. Eka Bogainti Contracted Via PT. Prawiratama Ekadharma</p>
-                            <ul class="list-disc list-inside space-y-2 text-slate-600 dark:text-slate-300 text-sm text-justify leading-relaxed">
+
+                            <!-- ID Content -->
+                            <ul class="lang-id list-disc list-inside space-y-2 text-slate-600 dark:text-slate-300 text-sm text-justify leading-relaxed">
+                                <li>Menerapkan prosedur keamanan fisik harian di seluruh area masuk fasilitas, mengelola catatan pengunjung, izin masuk vendor, dan pendaftaran karyawan untuk memastikan lingkungan yang aman bagi staf dan pengunjung.</li>
+                                <li>Melakukan patroli rutin, mengidentifikasi kelemahan keamanan, dan memastikan aset terlindungi sesuai dengan kebijakan perusahaan.</li>
+                                <li>Bertindak sebagai penolong pertama untuk insiden keselamatan, mengelola kerumunan selama jam sibuk, dan memastikan kepatuhan terhadap kebijakan kesehatan, keselamatan, dan keamanan tempat kerja perusahaan.</li>
+                            </ul>
+                            <!-- EN Content -->
+                            <ul class="lang-en hidden list-disc list-inside space-y-2 text-slate-600 dark:text-slate-300 text-sm text-justify leading-relaxed">
                                 <li>Implemented daily physical security procedures at all facility entry areas, handled visitor records, vendor entry permissions, and employee sign-ins to ensure a secure setting for both staff and visitors.</li>
                                 <li>Carried out regular patrols, spot security weaknesses, and ensure assets are protected according to company policies.</li>
                                 <li>Acted as the initial responder for safety incidents, handled crowd management during peak hour, and ensured adherence to corporate health, safety, and workplace security policies.</li>
@@ -360,10 +455,24 @@
                             <i class="fas fa-palette text-xs"></i>
                         </span>
                         <div class="bg-white dark:bg-slate-800 p-6 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm">
-                            <span class="text-xs font-bold text-emerald-600 uppercase tracking-widest block mb-2">SEPTEMBER 2021 - DECEMBER 2021</span>
-                            <h3 class="text-lg font-bold">Graphic Design Intern</h3>
+                            <span class="text-xs font-bold text-emerald-600 uppercase tracking-widest block mb-2">
+                                <span class="lang-id">SEPTEMBER 2021 - DESEMBER 2021</span>
+                                <span class="lang-en hidden">SEPTEMBER 2021 - DECEMBER 2021</span>
+                            </span>
+                            <h3 class="text-lg font-bold">
+                                <span class="lang-id">Magang Desain Grafis</span>
+                                <span class="lang-en hidden">Graphic Design Intern</span>
+                            </h3>
                             <p class="text-sm text-slate-500 dark:text-slate-400 mb-4 font-semibold">PT. Prawira Bahagia Selalu</p>
-                            <ul class="list-disc list-inside space-y-2 text-slate-600 dark:text-slate-300 text-sm text-justify leading-relaxed">
+
+                            <!-- ID Content -->
+                            <ul class="lang-id list-disc list-inside space-y-2 text-slate-600 dark:text-slate-300 text-sm text-justify leading-relaxed">
+                                <li>Membuat hingga 5 banner acara, poster, dan gambar mini (thumbnail) per minggu dalam hal desain visual berkualitas.</li>
+                                <li>Membuat paket ikon untuk Sorotan (Highlights) Instagram dengan kapasitas hingga 8 ikon dalam satu paket.</li>
+                                <li>Berkoordinasi dengan Tim Media Sosial untuk merencanakan dan mempersiapkan setiap aset desain untuk konten media sosial secara berkala.</li>
+                            </ul>
+                            <!-- EN Content -->
+                            <ul class="lang-en hidden list-disc list-inside space-y-2 text-slate-600 dark:text-slate-300 text-sm text-justify leading-relaxed">
                                 <li>Created up to 5 event banners, posters, and thumbnails per week in terms of design.</li>
                                 <li>Created an icon pack for Instagram Highlights with up to 8 icons included in a single pack.</li>
                                 <li>Coordinated with the Social Media Team to plan and prepare each design for social media content.</li>
@@ -377,10 +486,24 @@
                             <i class="fas fa-chart-line text-xs"></i>
                         </span>
                         <div class="bg-white dark:bg-slate-800 p-6 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm">
-                            <span class="text-xs font-bold text-indigo-600 uppercase tracking-widest block mb-2">SEPTEMBER 2020 - SEPTEMBER 2021</span>
-                            <h3 class="text-lg font-bold">Digital Marketing</h3>
+                            <span class="text-xs font-bold text-indigo-600 uppercase tracking-widest block mb-2">
+                                <span class="lang-id">SEPTEMBER 2020 - SEPTEMBER 2021</span>
+                                <span class="lang-en hidden">SEPTEMBER 2020 - SEPTEMBER 2021</span>
+                            </span>
+                            <h3 class="text-lg font-bold">
+                                <span class="lang-id">Pemasaran Digital (Digital Marketing)</span>
+                                <span class="lang-en hidden">Digital Marketing</span>
+                            </h3>
                             <p class="text-sm text-slate-500 dark:text-slate-400 mb-4 font-semibold">CV. Fayes</p>
-                            <ul class="list-disc list-inside space-y-2 text-slate-600 dark:text-slate-300 text-sm text-justify leading-relaxed">
+
+                            <!-- ID Content -->
+                            <ul class="lang-id list-disc list-inside space-y-2 text-slate-600 dark:text-slate-300 text-sm text-justify leading-relaxed">
+                                <li>Mengelola proses logistik lengkap hingga 2.000 paket masuk dan keluar setiap hari, serta memberikan dukungan pelanggan langsung ke lebih dari 20 klien setiap hari untuk pengiriman paket.</li>
+                                <li>Membuat dan memodifikasi gambar produk komersial serta video promosi untuk 15 toko online, dan menyiapkan laporan ringkasan operasional harian untuk menjaga pelaporan yang tepat dan lengkap.</li>
+                                <li>Mengarahkan dan membuat paket branding visual lengkap, termasuk logo, bingkai kustom, dan spanduk promosi, untuk 15 toko online setiap bulan guna meningkatkan kehadiran online dan meningkatkan keterlibatan toko.</li>
+                            </ul>
+                            <!-- EN Content -->
+                            <ul class="lang-en hidden list-disc list-inside space-y-2 text-slate-600 dark:text-slate-300 text-sm text-justify leading-relaxed">
                                 <li>Managed the complete logistics process for up to 2,000 packages coming in and going out each day, and provided direct customer support to more than 20 clients daily for package delivery.</li>
                                 <li>Created and modified commercial product images and promotional videos for 15 online stores, and prepared daily operational summary reports to maintain precise and complete reporting.</li>
                                 <li>Directed and created full visual brand packages, including logos, custom frames, and promotional banners, for 15 online stores each month to enhance their online presence and increase store engagement.</li>
@@ -396,10 +519,12 @@
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center max-w-3xl mx-auto mb-12">
                     <h2 class="text-3xl font-extrabold sm:text-4xl bg-gradient-to-r from-primary-600 to-indigo-600 bg-clip-text text-transparent">
-                        Sertifikasi Profesional
+                        <span class="lang-id">Sertifikasi Profesional</span>
+                        <span class="lang-en hidden">Professional Certifications</span>
                     </h2>
                     <p class="mt-4 text-slate-500 dark:text-slate-400">
-                        Berikut adalah daftar sertifikasi resmi nasional maupun internasional yang memvalidasi kompetensi multidisiplin saya di bidang teknologi, desain, dan keamanan.
+                        <span class="lang-id">Berikut adalah daftar sertifikasi resmi nasional maupun internasional yang memvalidasi kompetensi multidisiplin saya di bidang teknologi, desain, dan keamanan.</span>
+                        <span class="lang-en hidden">Here is the list of official national and international credentials validating my multidisciplinary competences in tech, design, and physical safety.</span>
                     </p>
                     <div class="w-16 h-1 bg-primary-600 mx-auto mt-4 rounded-full"></div>
                 </div>
@@ -409,14 +534,26 @@
                     <!-- Search Input -->
                     <div class="relative w-full md:w-80">
                         <i class="fas fa-search absolute left-3 top-1/2 -translate-y-1/2 text-slate-400"></i>
-                        <input type="text" id="cert-search" placeholder="Cari sertifikat..." class="w-full pl-10 pr-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-800 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-primary-500 transition-all">
+                        <input type="text" id="cert-search" data-placeholder-id="Cari sertifikat..." data-placeholder-en="Search credentials..." placeholder="Cari sertifikat..." class="w-full pl-10 pr-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-800 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-primary-500 transition-all">
                     </div>
                     <!-- Category Filters -->
                     <div class="flex flex-wrap gap-2 justify-center" id="filter-buttons">
-                        <button class="filter-btn px-4 py-2 rounded-xl text-sm font-semibold transition-all bg-primary-600 text-white" data-category="all">Semua</button>
-                        <button class="filter-btn px-4 py-2 rounded-xl text-sm font-semibold transition-all bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200" data-category="cybersecurity">Keamanan Siber & IT</button>
-                        <button class="filter-btn px-4 py-2 rounded-xl text-sm font-semibold transition-all bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200" data-category="physical-security">Keamanan Fisik</button>
-                        <button class="filter-btn px-4 py-2 rounded-xl text-sm font-semibold transition-all bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200" data-category="design">Desain & Kreatif</button>
+                        <button class="filter-btn px-4 py-2 rounded-xl text-sm font-semibold transition-all bg-primary-600 text-white" data-category="all">
+                            <span class="lang-id">Semua</span>
+                            <span class="lang-en hidden">All</span>
+                        </button>
+                        <button class="filter-btn px-4 py-2 rounded-xl text-sm font-semibold transition-all bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200" data-category="cybersecurity">
+                            <span class="lang-id">Keamanan Siber & IT</span>
+                            <span class="lang-en hidden">Cybersecurity & IT</span>
+                        </button>
+                        <button class="filter-btn px-4 py-2 rounded-xl text-sm font-semibold transition-all bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200" data-category="physical-security">
+                            <span class="lang-id">Keamanan Fisik</span>
+                            <span class="lang-en hidden">Physical Security</span>
+                        </button>
+                        <button class="filter-btn px-4 py-2 rounded-xl text-sm font-semibold transition-all bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200" data-category="design">
+                            <span class="lang-id">Desain & Kreatif</span>
+                            <span class="lang-en hidden">Design & Creative</span>
+                        </button>
                     </div>
                 </div>
 
@@ -425,16 +562,26 @@
                     <!-- Cert 1: Gada Pratama -->
                     <div class="cert-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-xl transition-all duration-300" data-category="physical-security">
                         <div class="relative overflow-hidden aspect-[4/3] bg-slate-100 dark:bg-slate-950 flex items-center justify-center p-4">
-                            <img src="assets/cert-gada-pratama.svg" alt="Gada Pratama Security Certification" class="w-full h-full object-contain cursor-pointer transition-transform hover:scale-105 duration-300 cert-image-trigger" data-images="assets/cert-gada-pratama.svg,assets/cert-gada-pratama-back.svg" data-title="Gada Pratama Security Certification" data-issuer="Kepolisian Negara Republik Indonesia (POLRI)" data-date="Mei 2021" data-id="POLRI-GP-8812-B2">
+                            <img src="assets/cert-gada-pratama.svg" alt="Gada Pratama Security Certification" class="w-full h-full object-contain cursor-pointer transition-transform hover:scale-105 duration-300 cert-image-trigger" data-images="assets/cert-gada-pratama.svg,assets/cert-gada-pratama-back.svg" data-title-id="Sertifikasi Keamanan Gada Pratama" data-title-en="Gada Pratama Security Certification" data-issuer="Kepolisian Negara Republik Indonesia (POLRI)" data-date-id="Mei 2021" data-date-en="May 2021" data-id="POLRI-GP-8812-B2">
                         </div>
                         <div class="p-6">
-                            <span class="text-xs font-bold text-blue-600 dark:text-blue-400 uppercase tracking-wider block mb-2">Keamanan Fisik (2 Halaman)</span>
-                            <h3 class="text-lg font-bold mb-1 hover:text-primary-600 transition-colors cursor-pointer cert-title-trigger" data-images="assets/cert-gada-pratama.svg,assets/cert-gada-pratama-back.svg" data-title="Gada Pratama Security Certification" data-issuer="Kepolisian Negara Republik Indonesia (POLRI)" data-date="Mei 2021" data-id="POLRI-GP-8812-B2">Gada Pratama Security Certification</h3>
-                            <p class="text-sm text-slate-500 dark:text-slate-400 mb-4">Diterbitkan oleh POLRI</p>
+                            <span class="text-xs font-bold text-blue-600 dark:text-blue-400 uppercase tracking-wider block mb-2">
+                                <span class="lang-id">Keamanan Fisik (2 Halaman)</span>
+                                <span class="lang-en hidden">Physical Security (2 Pages)</span>
+                            </span>
+                            <h3 class="text-lg font-bold mb-1 hover:text-primary-600 transition-colors cursor-pointer cert-title-trigger" data-images="assets/cert-gada-pratama.svg,assets/cert-gada-pratama-back.svg" data-title-id="Sertifikasi Keamanan Gada Pratama" data-title-en="Gada Pratama Security Certification" data-issuer="Kepolisian Negara Republik Indonesia (POLRI)" data-date-id="Mei 2021" data-date-en="May 2021" data-id="POLRI-GP-8812-B2">
+                                <span class="lang-id">Sertifikasi Keamanan Gada Pratama</span>
+                                <span class="lang-en hidden">Gada Pratama Security Certification</span>
+                            </h3>
+                            <p class="text-sm text-slate-500 dark:text-slate-400 mb-4">
+                                <span class="lang-id">Diterbitkan oleh POLRI</span>
+                                <span class="lang-en hidden">Published by POLRI</span>
+                            </p>
                             <div class="flex items-center justify-between pt-4 border-t border-slate-100 dark:border-slate-700/50">
                                 <span class="text-xs text-slate-400 dark:text-slate-500">ID: POLRI-GP-8812-B2</span>
-                                <button class="text-primary-600 hover:text-primary-700 font-bold text-sm flex items-center gap-1 cert-btn-trigger" data-images="assets/cert-gada-pratama.svg,assets/cert-gada-pratama-back.svg" data-title="Gada Pratama Security Certification" data-issuer="Kepolisian Negara Republik Indonesia (POLRI)" data-date="Mei 2021" data-id="POLRI-GP-8812-B2">
-                                    Detail <i class="fas fa-chevron-right text-xs"></i>
+                                <button class="text-primary-600 hover:text-primary-700 font-bold text-sm flex items-center gap-1 cert-btn-trigger" data-images="assets/cert-gada-pratama.svg,assets/cert-gada-pratama-back.svg" data-title-id="Sertifikasi Keamanan Gada Pratama" data-title-en="Gada Pratama Security Certification" data-issuer="Kepolisian Negara Republik Indonesia (POLRI)" data-date-id="Mei 2021" data-date-en="May 2021" data-id="POLRI-GP-8812-B2">
+                                    <span class="lang-id">Detail <i class="fas fa-chevron-right text-xs"></i></span>
+                                    <span class="lang-en hidden">Details <i class="fas fa-chevron-right text-xs"></i></span>
                                 </button>
                             </div>
                         </div>
@@ -443,16 +590,26 @@
                     <!-- Cert 2: Infinite Learning AI -->
                     <div class="cert-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-xl transition-all duration-300" data-category="cybersecurity">
                         <div class="relative overflow-hidden aspect-[4/3] bg-slate-100 dark:bg-slate-950 flex items-center justify-center p-4">
-                            <img src="assets/cert-infinite-learning.svg" alt="Infinite Learning Advance Artificial Intelligence" class="w-full h-full object-contain cursor-pointer transition-transform hover:scale-105 duration-300 cert-image-trigger" data-images="assets/cert-infinite-learning.svg" data-title="Advanced Artificial Intelligence" data-issuer="Infinite Learning Indonesia" data-date="November 2023" data-id="IL-AI-9012-A1">
+                            <img src="assets/cert-infinite-learning.svg" alt="Infinite Learning Advance Artificial Intelligence" class="w-full h-full object-contain cursor-pointer transition-transform hover:scale-105 duration-300 cert-image-trigger" data-images="assets/cert-infinite-learning.svg" data-title-id="Kecerdasan Buatan Tingkat Lanjut" data-title-en="Advanced Artificial Intelligence" data-issuer="Infinite Learning Indonesia" data-date-id="November 2023" data-date-en="November 2023" data-id="IL-AI-9012-A1">
                         </div>
                         <div class="p-6">
-                            <span class="text-xs font-bold text-amber-600 dark:text-amber-400 uppercase tracking-wider block mb-2">Sistem Teknologi AI</span>
-                            <h3 class="text-lg font-bold mb-1 hover:text-primary-600 transition-colors cursor-pointer cert-title-trigger" data-images="assets/cert-infinite-learning.svg" data-title="Advanced Artificial Intelligence" data-issuer="Infinite Learning Indonesia" data-date="November 2023" data-id="IL-AI-9012-A1">Advanced Artificial Intelligence</h3>
-                            <p class="text-sm text-slate-500 dark:text-slate-400 mb-4">Diterbitkan oleh Infinite Learning</p>
+                            <span class="text-xs font-bold text-amber-600 dark:text-amber-400 uppercase tracking-wider block mb-2">
+                                <span class="lang-id">Sistem Teknologi AI</span>
+                                <span class="lang-en hidden">AI Systems & Tech</span>
+                            </span>
+                            <h3 class="text-lg font-bold mb-1 hover:text-primary-600 transition-colors cursor-pointer cert-title-trigger" data-images="assets/cert-infinite-learning.svg" data-title-id="Kecerdasan Buatan Tingkat Lanjut" data-title-en="Advanced Artificial Intelligence" data-issuer="Infinite Learning Indonesia" data-date-id="November 2023" data-date-en="November 2023" data-id="IL-AI-9012-A1">
+                                <span class="lang-id">Kecerdasan Buatan Tingkat Lanjut</span>
+                                <span class="lang-en hidden">Advanced Artificial Intelligence</span>
+                            </h3>
+                            <p class="text-sm text-slate-500 dark:text-slate-400 mb-4">
+                                <span class="lang-id">Diterbitkan oleh Infinite Learning</span>
+                                <span class="lang-en hidden">Published by Infinite Learning</span>
+                            </p>
                             <div class="flex items-center justify-between pt-4 border-t border-slate-100 dark:border-slate-700/50">
                                 <span class="text-xs text-slate-400 dark:text-slate-500">ID: IL-AI-9012-A1</span>
-                                <button class="text-primary-600 hover:text-primary-700 font-bold text-sm flex items-center gap-1 cert-btn-trigger" data-images="assets/cert-infinite-learning.svg" data-title="Advanced Artificial Intelligence" data-issuer="Infinite Learning Indonesia" data-date="November 2023" data-id="IL-AI-9012-A1">
-                                    Detail <i class="fas fa-chevron-right text-xs"></i>
+                                <button class="text-primary-600 hover:text-primary-700 font-bold text-sm flex items-center gap-1 cert-btn-trigger" data-images="assets/cert-infinite-learning.svg" data-title-id="Kecerdasan Buatan Tingkat Lanjut" data-title-en="Advanced Artificial Intelligence" data-issuer="Infinite Learning Indonesia" data-date-id="November 2023" data-date-en="November 2023" data-id="IL-AI-9012-A1">
+                                    <span class="lang-id">Detail <i class="fas fa-chevron-right text-xs"></i></span>
+                                    <span class="lang-en hidden">Details <i class="fas fa-chevron-right text-xs"></i></span>
                                 </button>
                             </div>
                         </div>
@@ -461,16 +618,26 @@
                     <!-- Cert 3: Dumet School -->
                     <div class="cert-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-xl transition-all duration-300" data-category="design">
                         <div class="relative overflow-hidden aspect-[4/3] bg-slate-100 dark:bg-slate-950 flex items-center justify-center p-4">
-                            <img src="assets/cert-dumet-school.svg" alt="Dumet School Motion Graphic Designer" class="w-full h-full object-contain cursor-pointer transition-transform hover:scale-105 duration-300 cert-image-trigger" data-images="assets/cert-dumet-school.svg" data-title="Motion Graphic Designer" data-issuer="Dumet School" data-date="Februari 2022" data-id="DS-MG-3341-M8">
+                            <img src="assets/cert-dumet-school.svg" alt="Dumet School Motion Graphic Designer" class="w-full h-full object-contain cursor-pointer transition-transform hover:scale-105 duration-300 cert-image-trigger" data-images="assets/cert-dumet-school.svg" data-title-id="Perancang Grafis Gerak" data-title-en="Motion Graphic Designer" data-issuer="Dumet School" data-date-id="Februari 2022" data-date-en="February 2022" data-id="DS-MG-3341-M8">
                         </div>
                         <div class="p-6">
-                            <span class="text-xs font-bold text-pink-600 dark:text-pink-400 uppercase tracking-wider block mb-2">Desain & Kreatif</span>
-                            <h3 class="text-lg font-bold mb-1 hover:text-primary-600 transition-colors cursor-pointer cert-title-trigger" data-images="assets/cert-dumet-school.svg" data-title="Motion Graphic Designer" data-issuer="Dumet School" data-date="Februari 2022" data-id="DS-MG-3341-M8">Motion Graphic Designer</h3>
-                            <p class="text-sm text-slate-500 dark:text-slate-400 mb-4">Diterbitkan oleh Dumet School</p>
+                            <span class="text-xs font-bold text-pink-600 dark:text-pink-400 uppercase tracking-wider block mb-2">
+                                <span class="lang-id">Desain & Kreatif</span>
+                                <span class="lang-en hidden">Design & Creative</span>
+                            </span>
+                            <h3 class="text-lg font-bold mb-1 hover:text-primary-600 transition-colors cursor-pointer cert-title-trigger" data-images="assets/cert-dumet-school.svg" data-title-id="Perancang Grafis Gerak" data-title-en="Motion Graphic Designer" data-issuer="Dumet School" data-date-id="Februari 2022" data-date-en="February 2022" data-id="DS-MG-3341-M8">
+                                <span class="lang-id">Perancang Grafis Gerak</span>
+                                <span class="lang-en hidden">Motion Graphic Designer</span>
+                            </h3>
+                            <p class="text-sm text-slate-500 dark:text-slate-400 mb-4">
+                                <span class="lang-id">Diterbitkan oleh Dumet School</span>
+                                <span class="lang-en hidden">Published by Dumet School</span>
+                            </p>
                             <div class="flex items-center justify-between pt-4 border-t border-slate-100 dark:border-slate-700/50">
                                 <span class="text-xs text-slate-400 dark:text-slate-500">ID: DS-MG-3341-M8</span>
-                                <button class="text-primary-600 hover:text-primary-700 font-bold text-sm flex items-center gap-1 cert-btn-trigger" data-images="assets/cert-dumet-school.svg" data-title="Motion Graphic Designer" data-issuer="Dumet School" data-date="Februari 2022" data-id="DS-MG-3341-M8">
-                                    Detail <i class="fas fa-chevron-right text-xs"></i>
+                                <button class="text-primary-600 hover:text-primary-700 font-bold text-sm flex items-center gap-1 cert-btn-trigger" data-images="assets/cert-dumet-school.svg" data-title-id="Perancang Grafis Gerak" data-title-en="Motion Graphic Designer" data-issuer="Dumet School" data-date-id="Februari 2022" data-date-en="February 2022" data-id="DS-MG-3341-M8">
+                                    <span class="lang-id">Detail <i class="fas fa-chevron-right text-xs"></i></span>
+                                    <span class="lang-en hidden">Details <i class="fas fa-chevron-right text-xs"></i></span>
                                 </button>
                             </div>
                         </div>
@@ -479,16 +646,26 @@
                     <!-- Cert 4: IDS Cybersecurity -->
                     <div class="cert-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-xl transition-all duration-300" data-category="cybersecurity">
                         <div class="relative overflow-hidden aspect-[4/3] bg-slate-100 dark:bg-slate-950 flex items-center justify-center p-4">
-                            <img src="assets/cert-ids-cybersecurity.svg" alt="IDS CyberSecurity Academy Certification" class="w-full h-full object-contain cursor-pointer transition-transform hover:scale-105 duration-300 cert-image-trigger" data-images="assets/cert-ids-cybersecurity.svg,assets/cert-ids-cybersecurity-back.svg" data-title="CyberSecurity Certified Professional" data-issuer="IDS CyberSecurity Academy" data-date="Agustus 2023" data-id="IDS-CS-5512-C9">
+                            <img src="assets/cert-ids-cybersecurity.svg" alt="IDS CyberSecurity Academy Certification" class="w-full h-full object-contain cursor-pointer transition-transform hover:scale-105 duration-300 cert-image-trigger" data-images="assets/cert-ids-cybersecurity.svg,assets/cert-ids-cybersecurity-back.svg" data-title-id="Profesional Keamanan Siber Tersertifikasi" data-title-en="CyberSecurity Certified Professional" data-issuer="IDS CyberSecurity Academy" data-date-id="Agustus 2023" data-date-en="August 2023" data-id="IDS-CS-5512-C9">
                         </div>
                         <div class="p-6">
-                            <span class="text-xs font-bold text-emerald-600 dark:text-emerald-400 uppercase tracking-wider block mb-2">Keamanan Siber (2 Halaman)</span>
-                            <h3 class="text-lg font-bold mb-1 hover:text-primary-600 transition-colors cursor-pointer cert-title-trigger" data-images="assets/cert-ids-cybersecurity.svg,assets/cert-ids-cybersecurity-back.svg" data-title="CyberSecurity Certified Professional" data-issuer="IDS CyberSecurity Academy" data-date="Agustus 2023" data-id="IDS-CS-5512-C9">CyberSecurity Certified Professional</h3>
-                            <p class="text-sm text-slate-500 dark:text-slate-400 mb-4">Diterbitkan oleh IDS CyberSecurity</p>
+                            <span class="text-xs font-bold text-emerald-600 dark:text-emerald-400 uppercase tracking-wider block mb-2">
+                                <span class="lang-id">Keamanan Siber (2 Halaman)</span>
+                                <span class="lang-en hidden">Cybersecurity (2 Pages)</span>
+                            </span>
+                            <h3 class="text-lg font-bold mb-1 hover:text-primary-600 transition-colors cursor-pointer cert-title-trigger" data-images="assets/cert-ids-cybersecurity.svg,assets/cert-ids-cybersecurity-back.svg" data-title-id="Profesional Keamanan Siber Tersertifikasi" data-title-en="CyberSecurity Certified Professional" data-issuer="IDS CyberSecurity Academy" data-date-id="Agustus 2023" data-date-en="August 2023" data-id="IDS-CS-5512-C9">
+                                <span class="lang-id">Profesional Keamanan Siber Tersertifikasi</span>
+                                <span class="lang-en hidden">CyberSecurity Certified Professional</span>
+                            </h3>
+                            <p class="text-sm text-slate-500 dark:text-slate-400 mb-4">
+                                <span class="lang-id">Diterbitkan oleh IDS CyberSecurity</span>
+                                <span class="lang-en hidden">Published by IDS CyberSecurity</span>
+                            </p>
                             <div class="flex items-center justify-between pt-4 border-t border-slate-100 dark:border-slate-700/50">
                                 <span class="text-xs text-slate-400 dark:text-slate-500">ID: IDS-CS-5512-C9</span>
-                                <button class="text-primary-600 hover:text-primary-700 font-bold text-sm flex items-center gap-1 cert-btn-trigger" data-images="assets/cert-ids-cybersecurity.svg,assets/cert-ids-cybersecurity-back.svg" data-title="CyberSecurity Certified Professional" data-issuer="IDS CyberSecurity Academy" data-date="Agustus 2023" data-id="IDS-CS-5512-C9">
-                                    Detail <i class="fas fa-chevron-right text-xs"></i>
+                                <button class="text-primary-600 hover:text-primary-700 font-bold text-sm flex items-center gap-1 cert-btn-trigger" data-images="assets/cert-ids-cybersecurity.svg,assets/cert-ids-cybersecurity-back.svg" data-title-id="Profesional Keamanan Siber Tersertifikasi" data-title-en="CyberSecurity Certified Professional" data-issuer="IDS CyberSecurity Academy" data-date-id="Agustus 2023" data-date-en="August 2023" data-id="IDS-CS-5512-C9">
+                                    <span class="lang-id">Detail <i class="fas fa-chevron-right text-xs"></i></span>
+                                    <span class="lang-en hidden">Details <i class="fas fa-chevron-right text-xs"></i></span>
                                 </button>
                             </div>
                         </div>
@@ -497,16 +674,26 @@
                     <!-- Cert 5: IBM Certified -->
                     <div class="cert-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-xl transition-all duration-300" data-category="cybersecurity">
                         <div class="relative overflow-hidden aspect-[4/3] bg-slate-100 dark:bg-slate-950 flex items-center justify-center p-4">
-                            <img src="assets/cert-ibm.svg" alt="IBM Certified Professional" class="w-full h-full object-contain cursor-pointer transition-transform hover:scale-105 duration-300 cert-image-trigger" data-images="assets/cert-ibm.svg" data-title="IBM Certified Professional" data-issuer="IBM" data-date="September 2023" data-id="IBM-9902-I1">
+                            <img src="assets/cert-ibm.svg" alt="IBM Certified Professional" class="w-full h-full object-contain cursor-pointer transition-transform hover:scale-105 duration-300 cert-image-trigger" data-images="assets/cert-ibm.svg" data-title-id="Profesional IBM Tersertifikasi" data-title-en="IBM Certified Professional" data-issuer="IBM" data-date-id="September 2023" data-date-en="September 2023" data-id="IBM-9902-I1">
                         </div>
                         <div class="p-6">
-                            <span class="text-xs font-bold text-sky-600 dark:text-sky-400 uppercase tracking-wider block mb-2">Teknologi IT</span>
-                            <h3 class="text-lg font-bold mb-1 hover:text-primary-600 transition-colors cursor-pointer cert-title-trigger" data-images="assets/cert-ibm.svg" data-title="IBM Certified Professional" data-issuer="IBM" data-date="September 2023" data-id="IBM-9902-I1">IBM Certified Professional</h3>
-                            <p class="text-sm text-slate-500 dark:text-slate-400 mb-4">Diterbitkan oleh IBM Corp</p>
+                            <span class="text-xs font-bold text-sky-600 dark:text-sky-400 uppercase tracking-wider block mb-2">
+                                <span class="lang-id">Teknologi IT</span>
+                                <span class="lang-en hidden">IT Technology</span>
+                            </span>
+                            <h3 class="text-lg font-bold mb-1 hover:text-primary-600 transition-colors cursor-pointer cert-title-trigger" data-images="assets/cert-ibm.svg" data-title-id="Profesional IBM Tersertifikasi" data-title-en="IBM Certified Professional" data-issuer="IBM" data-date-id="September 2023" data-date-en="September 2023" data-id="IBM-9902-I1">
+                                <span class="lang-id">Profesional IBM Tersertifikasi</span>
+                                <span class="lang-en hidden">IBM Certified Professional</span>
+                            </h3>
+                            <p class="text-sm text-slate-500 dark:text-slate-400 mb-4">
+                                <span class="lang-id">Diterbitkan oleh IBM Corp</span>
+                                <span class="lang-en hidden">Published by IBM Corp</span>
+                            </p>
                             <div class="flex items-center justify-between pt-4 border-t border-slate-100 dark:border-slate-700/50">
                                 <span class="text-xs text-slate-400 dark:text-slate-500">ID: IBM-9902-I1</span>
-                                <button class="text-primary-600 hover:text-primary-700 font-bold text-sm flex items-center gap-1 cert-btn-trigger" data-images="assets/cert-ibm.svg" data-title="IBM Certified Professional" data-issuer="IBM" data-date="September 2023" data-id="IBM-9902-I1">
-                                    Detail <i class="fas fa-chevron-right text-xs"></i>
+                                <button class="text-primary-600 hover:text-primary-700 font-bold text-sm flex items-center gap-1 cert-btn-trigger" data-images="assets/cert-ibm.svg" data-title-id="Profesional IBM Tersertifikasi" data-title-en="IBM Certified Professional" data-issuer="IBM" data-date-id="September 2023" data-date-en="September 2023" data-id="IBM-9902-I1">
+                                    <span class="lang-id">Detail <i class="fas fa-chevron-right text-xs"></i></span>
+                                    <span class="lang-en hidden">Details <i class="fas fa-chevron-right text-xs"></i></span>
                                 </button>
                             </div>
                         </div>
@@ -515,16 +702,26 @@
                     <!-- Cert 6: Close Protection P1 Force -->
                     <div class="cert-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-xl transition-all duration-300" data-category="physical-security">
                         <div class="relative overflow-hidden aspect-[4/3] bg-slate-100 dark:bg-slate-950 flex items-center justify-center p-4">
-                            <img src="assets/cert-close-protection.svg" alt="Close Protection Certificated P1 Force" class="w-full h-full object-contain cursor-pointer transition-transform hover:scale-105 duration-300 cert-image-trigger" data-images="assets/cert-close-protection.svg,assets/cert-close-protection-back.svg" data-title="Close Protection Certificated P1 Force" data-issuer="P1 Force Security Academy" data-date="Juni 2022" data-id="CP-P1F-7731-P4">
+                            <img src="assets/cert-close-protection.svg" alt="Close Protection Certificated P1 Force" class="w-full h-full object-contain cursor-pointer transition-transform hover:scale-105 duration-300 cert-image-trigger" data-images="assets/cert-close-protection.svg,assets/cert-close-protection-back.svg" data-title-id="Sertifikat Proteksi Dekat P1 Force" data-title-en="Close Protection Certificated P1 Force" data-issuer="P1 Force Security Academy" data-date-id="Juni 2022" data-date-en="June 2022" data-id="CP-P1F-7731-P4">
                         </div>
                         <div class="p-6">
-                            <span class="text-xs font-bold text-indigo-600 dark:text-indigo-400 uppercase tracking-wider block mb-2">Keamanan Fisik (2 Halaman)</span>
-                            <h3 class="text-lg font-bold mb-1 hover:text-primary-600 transition-colors cursor-pointer cert-title-trigger" data-images="assets/cert-close-protection.svg,assets/cert-close-protection-back.svg" data-title="Close Protection Certificated P1 Force" data-issuer="P1 Force Security Academy" data-date="Juni 2022" data-id="CP-P1F-7731-P4">Close Protection Certificated P1 Force</h3>
-                            <p class="text-sm text-slate-500 dark:text-slate-400 mb-4">Diterbitkan oleh P1 Force Academy</p>
+                            <span class="text-xs font-bold text-indigo-600 dark:text-indigo-400 uppercase tracking-wider block mb-2">
+                                <span class="lang-id">Keamanan Fisik (2 Halaman)</span>
+                                <span class="lang-en hidden">Physical Security (2 Pages)</span>
+                            </span>
+                            <h3 class="text-lg font-bold mb-1 hover:text-primary-600 transition-colors cursor-pointer cert-title-trigger" data-images="assets/cert-close-protection.svg,assets/cert-close-protection-back.svg" data-title-id="Sertifikat Proteksi Dekat P1 Force" data-title-en="Close Protection Certificated P1 Force" data-issuer="P1 Force Security Academy" data-date-id="Juni 2022" data-date-en="June 2022" data-id="CP-P1F-7731-P4">
+                                <span class="lang-id">Sertifikat Proteksi Dekat P1 Force</span>
+                                <span class="lang-en hidden">Close Protection Certificated P1 Force</span>
+                            </h3>
+                            <p class="text-sm text-slate-500 dark:text-slate-400 mb-4">
+                                <span class="lang-id">Diterbitkan oleh P1 Force Academy</span>
+                                <span class="lang-en hidden">Published by P1 Force Academy</span>
+                            </p>
                             <div class="flex items-center justify-between pt-4 border-t border-slate-100 dark:border-slate-700/50">
                                 <span class="text-xs text-slate-400 dark:text-slate-500">ID: CP-P1F-7731-P4</span>
-                                <button class="text-primary-600 hover:text-primary-700 font-bold text-sm flex items-center gap-1 cert-btn-trigger" data-images="assets/cert-close-protection.svg,assets/cert-close-protection-back.svg" data-title="Close Protection Certificated P1 Force" data-issuer="P1 Force Security Academy" data-date="Juni 2022" data-id="CP-P1F-7731-P4">
-                                    Detail <i class="fas fa-chevron-right text-xs"></i>
+                                <button class="text-primary-600 hover:text-primary-700 font-bold text-sm flex items-center gap-1 cert-btn-trigger" data-images="assets/cert-close-protection.svg,assets/cert-close-protection-back.svg" data-title-id="Sertifikat Proteksi Dekat P1 Force" data-title-en="Close Protection Certificated P1 Force" data-issuer="P1 Force Security Academy" data-date-id="Juni 2022" data-date-en="June 2022" data-id="CP-P1F-7731-P4">
+                                    <span class="lang-id">Detail <i class="fas fa-chevron-right text-xs"></i></span>
+                                    <span class="lang-en hidden">Details <i class="fas fa-chevron-right text-xs"></i></span>
                                 </button>
                             </div>
                         </div>
@@ -538,10 +735,12 @@
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center max-w-3xl mx-auto mb-16">
                     <h2 class="text-3xl font-extrabold sm:text-4xl bg-gradient-to-r from-primary-600 to-indigo-600 bg-clip-text text-transparent">
-                        Hubungi Saya
+                        <span class="lang-id">Hubungi Saya</span>
+                        <span class="lang-en hidden">Contact Me</span>
                     </h2>
                     <p class="mt-4 text-slate-500 dark:text-slate-400">
-                        Tertarik bekerja sama, merekrut, atau mendiskusikan peluang proyek di bidang keamanan dan desain? Hubungi saya kapan saja!
+                        <span class="lang-id">Tertarik bekerja sama, merekrut, atau mendiskusikan peluang proyek di bidang keamanan dan desain? Hubungi saya kapan saja!</span>
+                        <span class="lang-en hidden">Interested in working together, recruiting, or discussing project collaborations in safety and design? Feel free to reach out anytime!</span>
                     </p>
                     <div class="w-16 h-1 bg-primary-600 mx-auto mt-4 rounded-full"></div>
                 </div>
@@ -549,9 +748,13 @@
                 <div class="grid grid-cols-1 md:grid-cols-12 gap-12 max-w-5xl mx-auto">
                     <!-- Contact Info -->
                     <div class="md:col-span-5 space-y-6">
-                        <h3 class="text-2xl font-bold">Informasi Kontak</h3>
+                        <h3 class="text-2xl font-bold">
+                            <span class="lang-id">Informasi Kontak</span>
+                            <span class="lang-en hidden">Contact Info</span>
+                        </h3>
                         <p class="text-slate-600 dark:text-slate-300">
-                            Saya siap dihubungi melalui pesan email, telepon, WhatsApp, atau media sosial profesional berikut. Respon biasanya dikirim dalam waktu cepat.
+                            <span class="lang-id">Saya siap dihubungi melalui pesan email, telepon, WhatsApp, atau media sosial profesional berikut. Respon biasanya dikirim dalam waktu cepat.</span>
+                            <span class="lang-en hidden">I am ready to be contacted via email, phone, WhatsApp, or the following professional social networks. Responses are usually sent quickly.</span>
                         </p>
                         <div class="space-y-4">
                             <div class="flex items-start gap-4">
@@ -559,8 +762,14 @@
                                     <i class="fas fa-user"></i>
                                 </div>
                                 <div>
-                                    <h4 class="font-bold text-sm text-slate-400">TEMPAT, TANGGAL LAHIR</h4>
-                                    <span class="text-slate-600 dark:text-slate-200 font-semibold">04 September 2002</span>
+                                    <h4 class="font-bold text-sm text-slate-400">
+                                        <span class="lang-id">TEMPAT, TANGGAL LAHIR</span>
+                                        <span class="lang-en hidden">PLACE, DATE OF BIRTH</span>
+                                    </h4>
+                                    <span class="text-slate-600 dark:text-slate-200 font-semibold text-sm">
+                                        <span class="lang-id">Jakarta, 04 September 2002</span>
+                                        <span class="lang-en hidden">Jakarta, September 04, 2002</span>
+                                    </span>
                                 </div>
                             </div>
                             <div class="flex items-start gap-4">
@@ -568,7 +777,10 @@
                                     <i class="fas fa-map-marker-alt"></i>
                                 </div>
                                 <div>
-                                    <h4 class="font-bold text-sm text-slate-400">ALAMAT</h4>
+                                    <h4 class="font-bold text-sm text-slate-400">
+                                        <span class="lang-id">ALAMAT</span>
+                                        <span class="lang-en hidden">ADDRESS</span>
+                                    </h4>
                                     <span class="text-slate-600 dark:text-slate-200 font-semibold text-sm">Jalan Rawa Lele No.30, Kalideres, Jakarta Barat, 11840</span>
                                 </div>
                             </div>
@@ -586,7 +798,10 @@
                                     <i class="fab fa-whatsapp"></i>
                                 </div>
                                 <div>
-                                    <h4 class="font-bold text-sm text-slate-400">TELEPON & WHATSAPP</h4>
+                                    <h4 class="font-bold text-sm text-slate-400">
+                                        <span class="lang-id">TELEPON & WHATSAPP</span>
+                                        <span class="lang-en hidden">PHONE & WHATSAPP</span>
+                                    </h4>
                                     <a href="https://wa.me/6281314473376" target="_blank" class="text-slate-600 dark:text-slate-200 hover:text-primary-600 font-semibold">081314473376</a>
                                 </div>
                             </div>
@@ -612,10 +827,13 @@
                     </div>
                     <!-- Contact Form -->
                     <div class="md:col-span-7">
-                        <form id="contact-form" class="space-y-6 bg-white dark:bg-slate-800 p-8 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm" onsubmit="event.preventDefault(); alert('Terima kasih! Pesan Anda telah terkirim.');">
+                        <form id="contact-form" class="space-y-6 bg-white dark:bg-slate-800 p-8 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm" onsubmit="event.preventDefault(); const msg = document.documentElement.classList.contains('lang-en-active') ? 'Thank you! Your message has been sent successfully.' : 'Terima kasih! Pesan Anda telah terkirim.'; alert(msg);">
                             <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                                 <div>
-                                    <label class="block text-sm font-semibold mb-2 text-slate-600 dark:text-slate-400" for="name">Nama</label>
+                                    <label class="block text-sm font-semibold mb-2 text-slate-600 dark:text-slate-400" for="name">
+                                        <span class="lang-id">Nama</span>
+                                        <span class="lang-en hidden">Name</span>
+                                    </label>
                                     <input type="text" id="name" required class="w-full px-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-primary-500 transition-all">
                                 </div>
                                 <div>
@@ -624,15 +842,23 @@
                                 </div>
                             </div>
                             <div>
-                                <label class="block text-sm font-semibold mb-2 text-slate-600 dark:text-slate-400" for="subject">Subjek</label>
+                                <label class="block text-sm font-semibold mb-2 text-slate-600 dark:text-slate-400" for="subject">
+                                    <span class="lang-id">Subjek</span>
+                                    <span class="lang-en hidden">Subject</span>
+                                </label>
                                 <input type="text" id="subject" required class="w-full px-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-primary-500 transition-all">
                             </div>
                             <div>
-                                <label class="block text-sm font-semibold mb-2 text-slate-600 dark:text-slate-400" for="message">Pesan</label>
+                                <label class="block text-sm font-semibold mb-2 text-slate-600 dark:text-slate-400" for="message">
+                                    <span class="lang-id">Pesan</span>
+                                    <span class="lang-en hidden">Message</span>
+                                </label>
                                 <textarea id="message" rows="4" required class="w-full px-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-primary-500 transition-all"></textarea>
                             </div>
                             <button type="submit" class="w-full py-3 bg-primary-600 text-white rounded-xl font-semibold shadow-lg shadow-primary-500/25 hover:bg-primary-700 hover:shadow-primary-600/35 transition-all flex items-center justify-center gap-2">
-                                <i class="fas fa-paper-plane"></i> Kirim Pesan
+                                <i class="fas fa-paper-plane"></i>
+                                <span class="lang-id">Kirim Pesan</span>
+                                <span class="lang-en hidden">Send Message</span>
                             </button>
                         </form>
                     </div>
@@ -645,10 +871,12 @@
     <footer class="bg-white dark:bg-slate-950 border-t border-slate-200 dark:border-slate-900 py-12 transition-colors duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
             <p class="text-sm text-slate-500 dark:text-slate-400 text-center md:text-left">
-                &copy; 2025 Abdullah Faqih. Hak Cipta Dilindungi Undang-Undang.
+                <span class="lang-id">&copy; 2025 Abdullah Faqih. Hak Cipta Dilindungi Undang-Undang.</span>
+                <span class="lang-en hidden">&copy; 2025 Abdullah Faqih. All Rights Reserved.</span>
             </p>
             <p class="text-sm text-slate-400 dark:text-slate-600 text-center md:text-right">
-                Dibuat secara profesional untuk menunjang pertumbuhan karir gemilang.
+                <span class="lang-id">Dibuat secara profesional untuk menunjang pertumbuhan karir gemilang.</span>
+                <span class="lang-en hidden">Professionally crafted to support outstanding career growth.</span>
             </p>
         </div>
     </footer>
@@ -695,14 +923,20 @@
                         <div class="flex gap-3" id="modal-issuer-row">
                             <i class="fas fa-university text-primary-500 shrink-0 mt-0.5"></i>
                             <div>
-                                <span class="block font-bold text-slate-400 text-xs uppercase">Penerbit</span>
+                                <span class="block font-bold text-slate-400 text-xs uppercase">
+                                    <span class="lang-id">Penerbit</span>
+                                    <span class="lang-en hidden">Issuer</span>
+                                </span>
                                 <span id="modal-issuer" class="font-semibold text-slate-800 dark:text-slate-100">Nama Penerbit</span>
                             </div>
                         </div>
                         <div class="flex gap-3" id="modal-date-row">
                             <i class="fas fa-calendar-alt text-primary-500 shrink-0 mt-0.5"></i>
                             <div>
-                                <span class="block font-bold text-slate-400 text-xs uppercase">Tanggal Terbit</span>
+                                <span class="block font-bold text-slate-400 text-xs uppercase">
+                                    <span class="lang-id">Tanggal Terbit</span>
+                                    <span class="lang-en hidden">Date Issued</span>
+                                </span>
                                 <span id="modal-date" class="font-semibold text-slate-800 dark:text-slate-100">Bulan Tahun</span>
                             </div>
                         </div>
@@ -716,16 +950,57 @@
                     </div>
                 </div>
                 <div class="mt-8 pt-6 border-t border-slate-100 dark:border-slate-700/50 flex gap-3">
-                    <button onclick="window.open(document.getElementById('modal-img').src)" class="flex-1 py-3 bg-primary-600 hover:bg-primary-700 text-white rounded-xl font-bold transition-all flex items-center justify-center gap-2 shadow-lg shadow-primary-500/25">
-                        <i class="fas fa-external-link-alt"></i> Buka File Gambar
+                    <button id="modal-open-img-btn" class="flex-1 py-3 bg-primary-600 hover:bg-primary-700 text-white rounded-xl font-bold transition-all flex items-center justify-center gap-2 shadow-lg shadow-primary-500/25">
+                        <i class="fas fa-external-link-alt"></i>
+                        <span class="lang-id">Buka File Gambar</span>
+                        <span class="lang-en hidden">Open Image File</span>
                     </button>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Script for interactive elements (Dark mode, Filters, Search, Modal Lightbox with Carousel, Mobile menu) -->
+    <!-- Script for interactive elements (Language switcher, Dark mode, Filters, Search, Modal Lightbox with Carousel, Mobile menu) -->
     <script>
+        // --- Language Toggle ---
+        const langToggleBtn = document.getElementById('lang-toggle');
+        const langToggleText = document.getElementById('lang-toggle-text');
+
+        let currentLang = localStorage.getItem('app-lang') || 'id';
+
+        function updateLanguageUI() {
+            const idElements = document.querySelectorAll('.lang-id');
+            const enElements = document.querySelectorAll('.lang-en');
+            const searchInput = document.getElementById('cert-search');
+
+            if (currentLang === 'id') {
+                document.documentElement.classList.remove('lang-en-active');
+                idElements.forEach(el => el.classList.remove('hidden'));
+                enElements.forEach(el => el.classList.add('hidden'));
+                langToggleText.textContent = 'EN';
+                if (searchInput) {
+                    searchInput.placeholder = searchInput.getAttribute('data-placeholder-id') || 'Cari sertifikat...';
+                }
+            } else {
+                document.documentElement.classList.add('lang-en-active');
+                idElements.forEach(el => el.classList.add('hidden'));
+                enElements.forEach(el => el.classList.remove('hidden'));
+                langToggleText.textContent = 'ID';
+                if (searchInput) {
+                    searchInput.placeholder = searchInput.getAttribute('data-placeholder-en') || 'Search credentials...';
+                }
+            }
+        }
+
+        // Initialize Language UI
+        updateLanguageUI();
+
+        langToggleBtn.addEventListener('click', () => {
+            currentLang = currentLang === 'id' ? 'en' : 'id';
+            localStorage.setItem('app-lang', currentLang);
+            updateLanguageUI();
+        });
+
         // --- Dark Mode ---
         const themeToggleBtn = document.getElementById('theme-toggle');
         const themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
@@ -809,6 +1084,11 @@
             });
         });
 
+        // Attach action for Buka File Gambar button
+        document.getElementById('modal-open-img-btn').addEventListener('click', () => {
+            window.open(modalImg.src);
+        });
+
         // --- Lightbox Modal with Carousel ---
         const modal = document.getElementById('cert-modal');
         const modalContainer = document.getElementById('modal-container');
@@ -840,7 +1120,11 @@
 
             setTimeout(() => {
                 modalImg.src = carouselImages[carouselIndex];
-                indicatorText.textContent = `${carouselIndex + 1} dari ${carouselImages.length}`;
+                if (currentLang === 'id') {
+                    indicatorText.textContent = `${carouselIndex + 1} dari ${carouselImages.length}`;
+                } else {
+                    indicatorText.textContent = `${carouselIndex + 1} of ${carouselImages.length}`;
+                }
 
                 if (carouselImages.length > 1) {
                     prevBtn.style.display = 'flex';
@@ -868,8 +1152,8 @@
         });
 
         function openModal(data) {
-            modalTitle.textContent = data.title;
-            modalTag.textContent = data.tag || "Info Sertifikasi";
+            modalTitle.textContent = currentLang === 'id' ? data.titleId : data.titleEn;
+            modalTag.textContent = currentLang === 'id' ? data.tagId : data.tagEn;
 
             // Setup Carousel images
             carouselImages = data.images || [];
@@ -884,7 +1168,7 @@
                 modalDateRow.style.display = 'flex';
                 modalIdRow.style.display = 'flex';
                 modalIssuer.textContent = data.issuer;
-                modalDate.textContent = data.date;
+                modalDate.textContent = currentLang === 'id' ? data.dateId : data.dateEn;
                 modalId.textContent = data.id;
             }
 
@@ -921,11 +1205,14 @@
 
                 openModal({
                     images: imagesArr,
-                    title: trigger.getAttribute('data-title'),
+                    titleId: trigger.getAttribute('data-title-id'),
+                    titleEn: trigger.getAttribute('data-title-en'),
                     issuer: trigger.getAttribute('data-issuer'),
-                    date: trigger.getAttribute('data-date'),
+                    dateId: trigger.getAttribute('data-date-id'),
+                    dateEn: trigger.getAttribute('data-date-en'),
                     id: trigger.getAttribute('data-id'),
-                    tag: "Info Sertifikasi",
+                    tagId: "Info Sertifikasi",
+                    tagEn: "Credentials Info",
                     isCV: false
                 });
             });
@@ -935,8 +1222,10 @@
         const triggerCV = () => {
             openModal({
                 images: ["assets/main_cv.jpg"],
-                title: "Curriculum Vitae (CV) - Abdullah Faqih",
-                tag: "Dokumen Karir",
+                titleId: "Curriculum Vitae (CV) - Abdullah Faqih",
+                titleEn: "Curriculum Vitae (CV) - Abdullah Faqih",
+                tagId: "Dokumen Karir",
+                tagEn: "Career Document",
                 isCV: true
             });
         };
