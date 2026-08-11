@@ -1,0 +1,11 @@
+baseURL = 'https://abdullahfaqih.web.id/blog/'
+languageCode = 'id'
+title = 'Blog Profesional - Abdullah Faqih'
+theme = 'custom-minimal'
+
+publishDir = '../blog'
+
+[sitemap]
+  changefreq = 'weekly'
+  priority = 0.5
+  filename = 'sitemap.xml'
