@@ -6,7 +6,7 @@ Thumbs.db
 .vscode/
 .idea/
 
-# Hugo build output (kalau kamu build lokal sebelum deploy)
+# Hugo build output ( build lokal sebelum deploy)
 blog/public/
 resources/
 .hugo_build.lock
