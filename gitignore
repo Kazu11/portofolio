@@ -1,0 +1,15 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# Hugo build output (kalau kamu build lokal sebelum deploy)
+blog/public/
+resources/
+.hugo_build.lock
+
+# Node (kalau nanti pakai tooling build)
+node_modules/
