@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Lokasi sitemap
+Sitemap: https://abdullahfaqih.web.id/sitemap.xml
